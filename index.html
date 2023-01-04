@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final CSS Battle</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .outer {
+            height: 100vh;
+            width: 100%;
+        }
+
+        nav {
+            height: 15%;
+            background-color: #232f3e;
+            color: white;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row;
+        }
+
+        .shadow {
+            display: grid;
+            place-items: center;
+           
+            position: relative;
+            background: #15202B;
+        }
+
+
+        .box {
+            width: 60vw;
+            height: 470px;
+            margin-top: 50px;
+            overflow: hidden;
+        }
+
+        .half-circle {
+            width: 200px;
+            height: 340px;
+            /* as the half of the width */
+            /* background-color: gold; */
+            border-top-left-radius: 110px;
+            /* 100px of height + 10px of border */
+            border-top-right-radius: 110px;
+            /* 100px of height + 10px of border */
+            border: 10px solid orange;
+            border-bottom: 0;
+        }
+
+        .half-circle-2 {
+            margin: 21px;
+            width: 140px;
+            height: 300px;
+            border-top-left-radius: 110px;
+            /* 100px of height + 10px of border */
+            border-top-right-radius: 110px;
+            /* 100px of height + 10px of border */
+            border: 10px solid orange;
+            border-bottom: 0;
+        }
+
+        .snake {
+            position: relative;
+            scale: 0.6;
+            margin-left: -724px;
+            margin-top: -181px;
+        }
+
+        .set {
+            position: absolute;
+
+        }
+
+        .upside-down {
+            rotate: 180deg;
+        }
+
+        #s0 {
+            top: -74px;
+            left: -259px;
+        }
+
+        #s2 {
+            left: 61px;
+            top: 131px;
+        }
+
+        #s3 {
+            left: 220px;
+        }
+
+        #s4 {
+            left: 382px;
+            top: 131px;
+        }
+
+        #s5 {
+            left: 541px;
+            bottom: -196px;
+        }
+
+        #s5-c1 {
+            height: 160px;
+            border-top-right-radius: 0px;
+            border-right-color: transparent;
+        }
+
+        #s5-c2 {
+            height: 110px;
+            border-top-right-radius: 0px;
+            border-right-color: transparent;
+            border-top-left-radius: 77px;
+
+        }
+
+        .head {
+            width: 126px;
+            height: 78px;
+            border-top-left-radius: 110px;
+            border-top-right-radius: 153px;
+            border-bottom-left-radius: 110px;
+            border-bottom-right-radius: 153px;
+            background-color: orange;
+            position: absolute;
+            left: 643px;
+            top: 15px;
+
+        }
+
+        .column {
+            flex-direction: column;
+            justify-content: space-around;
+            height: 100%;
+            margin-left: 40px;
+        }
+
+        .circle {
+            width: 20px;
+            height: 20px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        body{
+  background:#29C9F6;
+}
+.intro,
+.intro a{
+  color:#fff;
+}
+/* customizable snowflake styling */
+.snowflake {
+  color: #fff;
+  font-size: 1em;
+  font-family: Arial;
+  text-shadow: 0 0 1px #000;
+}
+
+@-webkit-keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@-webkit-keyframes snowflakes-shake{0%{-webkit-transform:translateX(0px);transform:translateX(0px)}50%{-webkit-transform:translateX(80px);transform:translateX(80px)}100%{-webkit-transform:translateX(0px);transform:translateX(0px)}}@keyframes snowflakes-fall{0%{top:-10%}100%{top:100%}}@keyframes snowflakes-shake{0%{transform:translateX(0px)}50%{transform:translateX(80px)}100%{transform:translateX(0px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:default;-webkit-animation-name:snowflakes-fall,snowflakes-shake;-webkit-animation-duration:10s,3s;-webkit-animation-timing-function:linear,ease-in-out;-webkit-animation-iteration-count:infinite,infinite;-webkit-animation-play-state:running,running;animation-name:snowflakes-fall,snowflakes-shake;animation-duration:10s,3s;animation-timing-function:linear,ease-in-out;animation-iteration-count:infinite,infinite;animation-play-state:running,running}.snowflake:nth-of-type(0){left:1%;-webkit-animation-delay:0s,0s;animation-delay:0s,0s}.snowflake:nth-of-type(1){left:10%;-webkit-animation-delay:1s,1s;animation-delay:1s,1s}.snowflake:nth-of-type(2){left:20%;-webkit-animation-delay:6s,.5s;animation-delay:6s,.5s}.snowflake:nth-of-type(3){left:30%;-webkit-animation-delay:4s,2s;animation-delay:4s,2s}.snowflake:nth-of-type(4){left:40%;-webkit-animation-delay:2s,2s;animation-delay:2s,2s}.snowflake:nth-of-type(5){left:50%;-webkit-animation-delay:8s,3s;animation-delay:8s,3s}.snowflake:nth-of-type(6){left:60%;-webkit-animation-delay:6s,2s;animation-delay:6s,2s}.snowflake:nth-of-type(7){left:70%;-webkit-animation-delay:2.5s,1s;animation-delay:2.5s,1s}.snowflake:nth-of-type(8){left:80%;-webkit-animation-delay:1s,0s;animation-delay:1s,0s}.snowflake:nth-of-type(9){left:90%;-webkit-animation-delay:3s,1.5s;animation-delay:3s,1.5s}
+/* Demo Purpose Only*/
+.demo {
+  font-family: 'Raleway', sans-serif;
+	color:#fff;
+    display: block;
+    margin: 0 auto;
+    padding: 15px 0;
+    text-align: center;
+}
+.demo a{
+  font-family: 'Raleway', sans-serif;
+color: #000;		
+}
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <nav class="flex">
+            <h2>Buttercup</h2>
+        </nav>
+        <main class="flex ">
+            <div class="box shadow">
+
+                    <div class="snake flex">
+                        <div class="set upside-down" id="s0">
+                            <div class="half-circle">
+                                <div class="half-circle-2"></div>
+                            </div>
+                        </div>
+                        <div class="set" id="s1">
+                            <div class="half-circle">
+                                <div class="half-circle-2"></div>
+                            </div>
+                        </div>
+                        <div class="set upside-down" id="s2">
+                            <div class="half-circle">
+                                <div class="half-circle-2"></div>
+                            </div>
+                        </div>
+                        <div class="set" id="s3">
+                            <div class="half-circle">
+                                <div class="half-circle-2"></div>
+                            </div>
+                        </div>
+                        <div class="set upside-down" id="s4">
+                            <div class="half-circle">
+                                <div class="half-circle-2"></div>
+                            </div>
+                        </div>
+                        <div class="set" id="s5">
+                            <div class="half-circle" id="s5-c1">
+                                <div class="half-circle-2" id="s5-c2"></div>
+                            </div>
+                        </div>
+                        <div class="head">
+                            <div class="flex column">
+                                <div class="circle"></div>
+                                <div class="circle"></div>
+                            </div>
+                        </div>
+                    </div>
+
+            </div>
+
+        </main>
+    </div>
+
+    <div class="snowflakes" aria-hidden="true">
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+        <div class="snowflake">
+        ❅
+        </div>
+        <div class="snowflake">
+        ❆
+        </div>
+        <div class="snowflake">
+        ❄
+        </div>
+      </div>
+</body>
+
+</html>
